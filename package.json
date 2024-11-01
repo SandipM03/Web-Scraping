@@ -1,13 +1,13 @@
 {
   "name": "Web-Scraping",
   "version": "1.0.0",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.ts",
   "repository": "https://github.com/SandipM03/Web-Scraping.git",
   "author": "SandipM03 <sandipmandal816708@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build":"tsc",
+    "build": "tsc",
     "dev": "node index.ts"
   },
   "devDependencies": {
