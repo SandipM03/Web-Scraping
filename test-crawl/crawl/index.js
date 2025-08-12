@@ -6,13 +6,13 @@ const browser = await puppeteer.launch();
 const page = await browser.newPage();
 
 // Navigate the page to a URL.
-await page.goto('https://www.codesprint.ninja/');
+await page.goto('https://mystery.hexafalls.tech/');
 
 // Set screen size.
 await page.setViewport({width: 1080, height: 1024});
 
-// Type into search box.
-await page.locator('.devsite-search-field').fill('automate beyond recorder');
+// Type into search box using accessible input name.
+await page.locator('aria/Search').fill('automate beyond recorder');
 
 // Wait and click on first result.
 await page.locator('.devsite-result-item-link').click();
